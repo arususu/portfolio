@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# PDF (ポートフォリオ資料は非公開)
+ポートフォリオ_制作物紹介PDF-2026/
+*.pdf

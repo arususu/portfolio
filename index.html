@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="川上晃弥のポートフォリオ — 旭川工業高等専門学校">
+  <title>川上晃弥 | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#hero">K. Kawakami</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">受賞歴</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">川上 <em>晃弥</em></h1>
+      <p class="hero-role">AI開発エンジニア <span class="sep">/</span> デバイスエンジニア</p>
+      <p class="hero-school">旭川工業高等専門学校</p>
+      <div class="hero-chips">
+        <span>AI / 機械学習</span>
+        <span>BLE / IoT</span>
+        <span>農業DX</span>
+        <span>XRデバイス</span>
+      </div>
+      <a href="#projects" class="btn-primary">プロジェクトを見る</a>
+    </div>
+    <div class="hero-deco" aria-hidden="true">
+      <div class="deco-ring deco-ring-1"></div>
+      <div class="deco-ring deco-ring-2"></div>
+      <div class="deco-ring deco-ring-3"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-layout">
+        <div class="about-text">
+          <p>旭川工業高等専門学校でAI開発とデバイスエンジニアリングを専攻しています。農業DX・屋内位置測位・AIを活用したサービス開発など、実社会の課題解決に向けたシステム開発に継続して取り組んでいます。</p>
+          <p>チームでのプロジェクト開発を通じ、機械学習モデルの設計・実装からBLEデバイスのハードウェア/ファームウェア開発まで幅広い経験を積んでいます。ハッカソン・ビジネスコンテストで多数の受賞実績があります。</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🤖</div>
+            <h3>AI / 機械学習</h3>
+            <div class="skill-tags">
+              <span>Python</span><span>PyTorch</span><span>TensorFlow</span>
+              <span>MobileNetV2</span><span>LLM Fine-Tuning</span><span>Qwen</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📡</div>
+            <h3>デバイス / IoT</h3>
+            <div class="skill-tags">
+              <span>BLE / Bluetooth</span><span>nRF Series</span>
+              <span>Jetson Orin Nano</span><span>Intel RealSense</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <h3>バックエンド / Web</h3>
+            <div class="skill-tags">
+              <span>Node.js</span><span>FastAPI</span><span>Flask</span>
+              <span>WebSocket</span><span>REST API</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🥽</div>
+            <h3>XR / その他</h3>
+            <div class="skill-tags">
+              <span>HoloLens2</span><span>MR / XR</span><span>Canvas API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-note">
+        資料に名前が記載されているプロジェクトを <strong>主担当</strong> または <strong>参加</strong>、
+        記載がない場合を <strong>サポート</strong> として分類しています。
+      </p>
+      <div class="filter-bar" role="group" aria-label="プロジェクトフィルター">
+        <button class="filter-btn active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="lead">主担当</button>
+        <button class="filter-btn" data-filter="member">参加</button>
+        <button class="filter-btn" data-filter="support">サポート</button>
+      </div>
+      <div class="projects-grid" id="projects-grid" role="list">
+        <!-- JS により生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AWARDS ========== -->
+  <section id="awards" class="section">
+    <div class="container">
+      <h2 class="section-title">受賞歴 / 実績</h2>
+      <div class="awards-list" id="awards-list">
+        <!-- JS により生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-desc">就職・インターン・お問い合わせはメールにてお願いします。</p>
+      <div class="contact-cards">
+        <a href="mailto:horokewkamui1928@gmail.com" class="contact-card">
+          <span class="contact-card-icon">✉</span>
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value">horokewkamui1928@gmail.com</span>
+        </a>
+        <!-- GitHub URLを設定してください -->
+        <!-- <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card-icon">⌥</span>
+          <span class="contact-card-label">GitHub</span>
+          <span class="contact-card-value">@YOUR_USERNAME</span>
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 川上晃弥 — Powered by GitHub Pages</p>
+  </footer>
+
+  <!-- ========== MODAL ========== -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-box" id="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="閉じる">✕</button>
+      <div id="modal-content" class="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
