@@ -144,6 +144,7 @@ const PROJECTS = [
  *   name   : string — 受賞・実績名
  *   detail : string — 受賞内容・詳細
  *   note   : string — 備考（省略可）
+ *   image  : string — 受賞証明写真のパス（省略可）例: "images/awards/wicon2024.jpg"
  */
 const AWARDS = [
   {

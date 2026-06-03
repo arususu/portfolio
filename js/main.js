@@ -99,8 +99,34 @@ function renderAwards(awards) {
         ${a.note ? `<div class="award-detail">${esc(a.note)}</div>` : ''}
         <div class="award-year">${esc(a.year)}</div>
       </div>
+      ${a.image ? `
+      <button class="award-img-btn" aria-label="${esc(a.name)} 証明写真を見る" data-src="${esc(a.image)}">
+        <img src="${esc(a.image)}" alt="${esc(a.name)} 証明写真" class="award-img-thumb" loading="lazy">
+      </button>` : ''}
     </div>
   `).join('');
+
+  // 写真クリックで画像モーダルを開く
+  $$('.award-img-btn', list).forEach(btn => {
+    btn.addEventListener('click', () => openImageModal(btn.dataset.src, btn.getAttribute('aria-label')));
+  });
+}
+
+function openImageModal(src, label) {
+  const overlay = $('#modal-overlay');
+  const content = $('#modal-content');
+  if (!overlay || !content) return;
+
+  content.innerHTML = `
+    <p class="modal-section-label">${esc(label)}</p>
+    <img src="${esc(src)}" alt="${esc(label)}" style="width:100%;border-radius:var(--radius);display:block;">
+  `;
+
+  overlay.setAttribute('aria-hidden', 'false');
+  overlay.classList.add('open');
+  scrollY = window.scrollY;
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => $('#modal-close')?.focus(), 50);
 }
 
 /* =============================================

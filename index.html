@@ -18,6 +18,7 @@
       <a class="nav-brand" href="#hero">K. Kawakami</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#profile">Profile</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#awards">受賞歴</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -89,6 +90,80 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROFILE ========== -->
+  <section id="profile" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Profile</h2>
+      <div class="profile-layout">
+
+        <!-- 顔写真 -->
+        <div class="profile-photo-area">
+          <div class="profile-photo-frame">
+            <img
+              src="images/profile.jpg"
+              alt="川上晃弥"
+              class="profile-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            >
+            <!-- 写真未設定時のプレースホルダー -->
+            <div class="profile-photo-placeholder" style="display:none;">K</div>
+          </div>
+          <p class="profile-name-jp">川上 晃弥</p>
+          <p class="profile-name-en">Akiya Kawakami</p>
+        </div>
+
+        <!-- 基本情報 -->
+        <div class="profile-info">
+          <dl class="profile-dl">
+            <div class="profile-row">
+              <dt>生まれ</dt>
+              <!-- TODO: 生年月日・出生地を記入してください -->
+              <dd>200X年 北海道（要記入）</dd>
+            </div>
+            <div class="profile-row">
+              <dt>出身</dt>
+              <!-- TODO: 出身地を記入してください -->
+              <dd>北海道（要記入）</dd>
+            </div>
+            <div class="profile-row">
+              <dt>所属</dt>
+              <dd>旭川工業高等専門学校</dd>
+            </div>
+            <div class="profile-row">
+              <dt>専攻</dt>
+              <dd>AI開発 / デバイスエンジニアリング</dd>
+            </div>
+          </dl>
+
+          <!-- 経歴タイムライン -->
+          <div class="profile-timeline">
+            <h3 class="timeline-heading">経歴</h3>
+            <ol class="timeline">
+              <!-- TODO: 経歴を追加してください -->
+              <li class="timeline-item">
+                <span class="timeline-year">20XX</span>
+                <span class="timeline-desc">旭川工業高等専門学校 入学（要記入）</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-year">2024</span>
+                <span class="timeline-desc">WiCON 2024 リコー賞・北海道起業家甲子園 準優勝</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-year">2025</span>
+                <span class="timeline-desc">NEDO フューチャーリーダーズプログラム 採択</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-year">2026</span>
+                <span class="timeline-desc">DCON 2026 出展</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
